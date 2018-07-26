@@ -6,8 +6,6 @@
 	EXECUTION HELP		:	SET THE COUNTRY LIST IN THE WHERE CLAUSE OF @CountryIDList.
 							SET THE START DATE AND END DATE TO @StartDate AND @EndDate VARIABLES
 */
-
--- Set the given Country Names in the WHERE clause below
 DECLARE	@CountryIDList TABLE (ISOCountryID INT)
 INSERT	INTO @CountryIDList (ISOCountryID)
 SELECT	IC.ISOCountryID 
